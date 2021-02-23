@@ -1,0 +1,34 @@
+{
+  "name": "relay-rabbitmq",
+  "version": "1.0.0",
+  "description": "This package makes it easy for you to send a message on rabbitMQ and provide a callback for a response.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jest --collectCoverage --detectOpenHandles --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyinna/relay-package.git"
+  },
+  "keywords": [
+    "RabbitMQ",
+    "RPC",
+    "Queue",
+    "node.js",
+    "express.js"
+  ],
+  "author": "Chinyelu Ibute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyinna/relay-package/issues"
+  },
+  "homepage": "https://github.com/Oyinna/relay-package#readme",
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
