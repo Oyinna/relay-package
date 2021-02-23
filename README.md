@@ -40,8 +40,11 @@ Usage is a straight process. First, define the following parameters
 
 reqMsg = the request body;
 url = the RabbitMQ url;
+
 resQueueName = the name of your response queue;
+
 reqQueueName = the name of your rrquest queue;
+
 options = the channel options eg { exclusive: true };
 
 Call the Queue function passing in the rabbitMQ url to establish rabbitMQ connection.
