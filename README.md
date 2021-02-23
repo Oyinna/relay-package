@@ -44,14 +44,12 @@ resQueueName = the name of your response queue;
 reqQueueName = the name of your rrquest queue;
 options = the channel options eg { exclusive: true };
 
-Call the Queue function passing in the rabbitMQ url to establish rabbitMQ connection.
+* Call the Queue function passing in the rabbitMQ url to establish rabbitMQ connection.
 ``` const mqConnection = await Queue(url);
-
 ```
 
-Call the Queue.relay function passing in the request, request queue name, response queue name and the option parameter.
+* Call the Queue.relay function passing in the request, request queue name, response queue name and the option parameter.
 ``` const res = await Queue.relay(reqMsg, reqQueueName, resQueueName, options)
-
 ```
 
 res is the response returned from the response queue.
