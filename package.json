@@ -1,5 +1,5 @@
 {
-  "name": "relay-rabbitmq-npm",
+  "name": "relay-rabbitmq",
   "version": "1.0.0",
   "description": "This package makes it easy for you to send a message on rabbitMQ and provide a callback for a response.",
   "main": "index.js",
