@@ -24,10 +24,13 @@ const Services = async (url) => {
                     const jResMsg = JSON.parse(resMsg.content)
                     if (resMsg.properties.correlationId == uuid) {
                         resolve(jResMsg)
-                        setTimeout(() => {
-                            connection.close();
-                            process.exit(0);
-                        }, 500);
+                        connection.close();
+                        // process.exit(0);
+                        //     process.exit(0);
+                        // setTimeout(() => {
+                        //     connection.close();
+                        //     process.exit(0);
+                        // }, 50);
                     }
                 }, { noAck: true });
             } catch (error) {
